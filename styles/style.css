@@ -1,0 +1,75 @@
+body {
+    background-color: #2a2e32;
+    color: ghostwhite;
+    font-size: 15px;
+    line-height: normal;
+    font-family: "Source Code Pro", serif;
+    font-weight: 500;
+}
+footer{
+    position: absolute;
+}
+.top {;
+    display: flex;
+    align-items: center;
+    border-bottom: solid darkblue 1px;
+}
+
+.top_logo {
+    margin-right: 2%;
+}
+
+.top_navbar {
+    margin-left: auto;
+}
+
+
+
+@media screen {
+    .news {
+        border-left: solid black 1px;
+        background-color: #2a2e32;
+        padding: 1%;
+        width: 30%;
+    }
+}
+@media not screen {
+    .news{
+        display: none;
+    }
+}
+
+
+.welcome {
+}
+
+.about {
+    border-top: solid black 1px;
+}
+
+.useful_quote {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2%;
+}
+
+main {
+    display: flex;
+    background-color: rgba(43,43,43,0.62);
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+}
+
+.ascii_art{
+display: none;
+}
+
+.sections{
+    border-top: solid black 1px;
+}

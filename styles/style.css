@@ -1,9 +1,9 @@
 body {
-    background-color: #2a2e32;
+    background-color: rgb(30, 30, 30);
     color: ghostwhite;
     font-size: 15px;
     line-height: normal;
-    font-family: "Source Code Pro", serif;
+    font-family: "Ubuntu", serif;
     font-weight: 500;
 }
 footer{
@@ -12,42 +12,68 @@ footer{
 .top {;
     display: flex;
     align-items: center;
-    border-bottom: solid darkblue 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid gray 1px;
+    border-left: solid gray 1px;
+    border-right: solid gray 1px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
-.top_logo {
+.top__logo {
     margin-right: 2%;
+    margin-left: 1%;
 }
 
-.top_navbar {
+.top__navbar {
     margin-left: auto;
+    margin-right: 1%;
 }
 
 
 
-@media screen {
+
     .news {
         border-left: solid black 1px;
-        background-color: #2a2e32;
-        padding: 1%;
-        width: 30%;
-    }
+        padding: 10px;
+        max-width: 30%;
 }
-@media not screen {
+    .news__list{
+        display: grid;
+        border: solid rgba(70,70, 70,0.62) 1px;
+    }
+
+    .news__list > div:nth-child(odd) {
+        background-color: rgba(35,35,35,0.62);
+    }
+    .news__list > div:nth-child(even) {
+        background-color: rgba(25,25,25,0.62);
+    }
+    .news__list > div{
+        border: solid rgba(70,70, 70,0.62) 1px;
+    }
+    .news > h4{
+        border-bottom: solid rgba(70,70, 70,0.62) 1px;
+        padding-bottom: 5px;
+    }
+
+@media not screen  and (min-width: 720px){
     .news{
         display: none;
     }
 }
 
 
-.welcome {
+
+.infomation__introduction {
 }
 
-.about {
+.information__aboutwiki {
     border-top: solid black 1px;
 }
 
-.useful_quote {
+.usefulquote {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -56,20 +82,24 @@ footer{
 
 main {
     display: flex;
+    justify-content: end;
     background-color: rgba(43,43,43,0.62);
     border-top: solid black 1px;
-    border-bottom: solid black 1px;
+    border-bottom: solid lightgray 1px;
 }
 
 .information {
     display: flex;
     flex-direction: column;
+    min-width: 70%;
 }
 
 .ascii_art{
 display: none;
 }
 
-.sections{
-    border-top: solid black 1px;
+.information__sections{
+}
+footer{
+    color: gray;
 }

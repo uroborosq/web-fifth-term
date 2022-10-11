@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: ghostwhite;
+    font-size: 14px;
+    line-height: normal;
+    font-family: "Open Serif", serif;
+    font-weight: normal;
+}
+
+footer {
+    position: absolute;
+}
+
+.top {;
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid rgb(70, 70, 70) 1px;
+    border-left: solid rgb(70, 70, 70) 1px;
+    border-right: solid rgb(70, 70, 70) 1px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 5px 5px rgb(45, 45, 45);
+}
+
+.top__logo {
+    margin-right: 2%;
+    margin-left: 1%;
+}
+.top > nav {
+    margin-left: auto;
+    margin-right: 1%;
+}
+
+.top__navbar {
+    display: flex;
+    padding: 1px;
+}
+
+.top__navbar > *
+{
+    padding: 10px;
+    border-right: solid gray 1px;
+}
+
+.top__navbar > a:link {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.top__navbar > a:visited {
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+/*.top__navbar > a:focus {*/
+/*    color: blue;*/
+/*    text-decoration: none;*/
+
+/*}*/
+.top__navbar > a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+
+/*.top__navbar > a:active {*/
+/*    color: blue;*/
+/*    text-decoration: none;*/
+/*}*/
+
+.top__navbar_lc{
+    border-right: none;
+}
+
+.news {
+    border-left: solid rgb(70, 70, 70) 1px;
+    padding: 10px;
+    max-width: 30%;
+
+}
+.news__list {
+    display: grid;
+    border: solid rgb(70, 70, 70) 1px;
+}
+
+.news__list > div:nth-child(odd) {
+    background-color: rgb(35, 35, 35);
+}
+
+.news__list > div:nth-child(even) {
+    background-color: rgb(25, 25, 25);
+}
+
+.news__list > div {
+    border: solid rgb(70, 70, 70) 1px;
+    padding: 10px;
+
+
+}
+
+.news > h4 {
+    border-bottom: solid rgb(70, 70, 70) 1px;
+    padding-bottom: 5px;
+
+}
+
+@media not screen  and (min-width: 720px) {
+    .news {
+        display: none;
+    }
+}
+
+.information__aboutwiki {
+    border-top: solid rgb(55, 55, 55) 1px;
+}
+
+.usefulquote {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 2%;
+}
+
+main {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(35, 35, 35);
+    border-top: solid rgb(55, 55, 55) 1px;
+    border-bottom: solid lightgray 1px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    min-width: 70%;
+}
+
+.ascii_art {
+    display: none;
+}
+
+.information__sections {
+}
+
+footer {
+    color: gray;
+}

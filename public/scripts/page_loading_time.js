@@ -1,12 +1,14 @@
-!function () {
-    const startTime = new Date().getTime()
+(function ()
+{
+    let start = new Date().getTime();
 
-    const perfEntries = performance.getEntriesByType("navigation");
-    const [p] = perfEntries;
-    let pageLoadTime = p.startTime;
-    function inner() {
-        let currTime = new Date().getTime()
-        console.log(currTime - startTime)
+    function calculateLoadTime()
+    {
+        let current = new Date().getTime();
+        let loadTime = (current - start) / 1000
+        let statsObject = document.getElementById("interestingstats")
+        statsObject.innerText = "Загрузка страницы заняла " + loadTime + "сек"
     }
-    inner()
-}()
+
+    window.addEventListener("load", _ => {calculateLoadTime()})
+ })()

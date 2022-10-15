@@ -1,17 +1,13 @@
 body {
     background-color: rgb(30, 30, 30);
     color: ghostwhite;
-    font-size: 14px;
+    font-size: 15px;
     line-height: normal;
-    font-family: "Open Serif", serif;
-    font-weight: normal;
+    font-family: "Source Code Pro", serif;
+    /*font-weight: normal;*/
 }
 
-footer {
-    position: absolute;
-}
-
-.top {;
+.top {
     display: flex;
     align-items: center;
     padding-top: 5px;
@@ -27,14 +23,12 @@ footer {
     margin-right: 2%;
     margin-left: 1%;
 }
-.top > nav {
-    margin-left: auto;
-    margin-right: 1%;
-}
 
 .top__navbar {
     display: flex;
     padding: 1px;
+    margin-left: auto;
+    margin-right: 1%;
 }
 
 .top__navbar > *
@@ -53,20 +47,10 @@ footer {
     text-decoration: none;
 }
 
-/*.top__navbar > a:focus {*/
-/*    color: blue;*/
-/*    text-decoration: none;*/
-
-/*}*/
 .top__navbar > a:hover {
     color: aqua;
     text-decoration: none;
 }
-
-/*.top__navbar > a:active {*/
-/*    color: blue;*/
-/*    text-decoration: none;*/
-/*}*/
 
 .top__navbar_lc{
     border-right: none;
@@ -121,7 +105,7 @@ footer {
     padding: 2%;
 }
 
-main {
+#mainpage {
     display: flex;
     justify-content: end;
     background-color: rgb(35, 35, 35);
@@ -143,5 +127,45 @@ main {
 }
 
 footer {
+    display: flex;
+    align-items: baseline;
     color: gray;
+}
+
+#interestingstats {
+    font-style: italic;
+    margin-left: auto;
+}
+
+#authorization{
+    width: auto;
+    margin-right: auto;
+}
+
+fieldset > p{
+}
+#authorization  > form > fieldset > p > label {
+    display: inline-block;
+    width: 12em;
+
+}
+#authorization  > form > fieldset > p > input {
+    vertical-align:  middle;
+}
+
+.box {
+    border: solid gray 1px;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+a {
+    color: ghostwhite;
+}
+a:hover {
+    color: aqua;
+}
+
+.boxheader {
+    border-bottom: solid gray 1px;
 }

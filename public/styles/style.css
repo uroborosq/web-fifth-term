@@ -105,6 +105,11 @@ body {
     padding: 2%;
 }
 
+main {
+    display: block;
+}
+
+
 #mainpage {
     display: flex;
     justify-content: end;

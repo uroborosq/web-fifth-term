@@ -10,5 +10,5 @@
         statsObject.innerText = "Загрузка страницы заняла " + loadTime + "сек"
     }
 
-    window.addEventListener("load", _ => {calculateLoadTime()})
+    window.addEventListener("DOMContentLoaded", _ => {calculateLoadTime()})
  })()

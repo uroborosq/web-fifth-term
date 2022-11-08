@@ -107,15 +107,14 @@ body {
 
 main {
     display: block;
+    background-color: rgb(35, 35, 35);
+    border-top: solid rgb(55, 55, 55) 1px;
+    border-bottom: solid lightgray 1px;
 }
-
 
 #mainpage {
     display: flex;
     justify-content: end;
-    background-color: rgb(35, 35, 35);
-    border-top: solid rgb(55, 55, 55) 1px;
-    border-bottom: solid lightgray 1px;
 }
 
 .information {
@@ -142,19 +141,19 @@ footer {
     margin-left: auto;
 }
 
-#authorization{
+form{
     width: auto;
     margin-right: auto;
 }
 
 fieldset > p{
 }
-#authorization  > form > fieldset > p > label {
+form > fieldset > p > label {
     display: inline-block;
     width: 12em;
 
 }
-#authorization  > form > fieldset > p > input {
+form > fieldset > p > input {
     vertical-align:  middle;
 }
 

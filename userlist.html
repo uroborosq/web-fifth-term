@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Список пользователей</title>
   <meta charset="utf-8">
@@ -7,19 +8,31 @@
   <meta content="Ресурс с документацией по GNU\Linux и обсуждением" name="description">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="public/styles/style.css" rel="stylesheet">
+  <link href="public/styles/animations.css" rel="stylesheet">
+  <link href="node_modules/spinkit/spinkit.min.css" rel="stylesheet">
+  <script src="node_modules/nanobar/nanobar.min.js"></script>
   <script src="public/scripts/load-header-and-footer.js"></script>
   <script src="public/scripts/page_loading_time.js"></script>
   <script src="public/scripts/decorate-navbar.js"></script>
   <script src="public/scripts/fetch-users.js"></script>
+  <script src="public/scripts/preloader-animation.js"></script>
 </head>
+
 <body>
-<header></header>
-<main>
-  <div class="lds-ring" id="preloader"><div></div><div></div><div></div><div></div></div>
-  <div class="box" id="userlist"></div>
-</main>
-<footer></footer>
-<script>loadHeaderAndFooter()</script>
-<script>decorateNavbar()</script>
+  <header></header>
+  <main>
+    <div id="preloader">
+      <div class="sk-bounce sk-center">
+        <div class="sk-bounce-dot"></div>
+        <div class="sk-bounce-dot"></div>
+      </div>
+    </div>
+    <div class="box" id="userlist"></div>
+  </main>
+  <footer></footer>
+  <script>loadHeaderAndFooter()</script>
+  <script>decorateNavbar()</script>
+  <script>applyPreloaderAnimation()</script>
 </body>
+
 </html>

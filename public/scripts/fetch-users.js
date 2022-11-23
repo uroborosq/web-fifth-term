@@ -49,6 +49,6 @@
     }
 
     window.addEventListener("DOMContentLoaded", _ => {
-        setTimeout(renderUsers, 500)
+        setTimeout(renderUsers, 1500)
     })
 })()

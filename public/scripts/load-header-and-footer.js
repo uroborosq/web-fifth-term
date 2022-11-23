@@ -13,7 +13,9 @@ function loadHeaderAndFooter() {
         <a id="top__navbar_main" href="index.html">Главная страница</a>
         <a id="top__navbar_wiki" href="wiki.html">Вики</a>
         <a id="top__navbar_forum" href="forum.html">Форум</a>
+        <a id="top__navbar_users" href="userlist.html">Пользователи</a>
         <a id="top__navbar_lc" href="lc.html">Личный кабинет</a>
+
     </nav>
 </div>
     <div class="usefulquote">

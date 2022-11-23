@@ -15,6 +15,9 @@ function decorateNavbar() {
                 case "lc.html":
                     element = document.getElementById("top__navbar_lc")
                     break
+                case "userlist.html":
+                    element = document.getElementById("top__navbar_users")
+                    break
             }
             if (element) {
                 element.style.fontStyle = 'bold'

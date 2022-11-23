@@ -52,20 +52,20 @@ body {
     text-decoration: none;
 }
 
-.top__navbar_lc{
-    border-right: none;
+#top__navbar_lc{
+    border-right: 0;
 }
 
 .news {
-    border-left: solid rgb(70, 70, 70) 1px;
     padding: 10px;
     max-width: 30%;
-
 }
 .news__list {
     display: grid;
     border: solid rgb(70, 70, 70) 1px;
 }
+
+
 
 .news__list > div:nth-child(odd) {
     background-color: rgb(35, 35, 35);
@@ -78,15 +78,26 @@ body {
 .news__list > div {
     border: solid rgb(70, 70, 70) 1px;
     padding: 10px;
+}
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table > tbody > tr:nth-child(odd) {
+    background-color: rgb(35, 35, 35);
+}
+
+table > tbody > tr:nth-child(even) {
+    background-color: rgb(25, 25, 25);
 
 }
 
-.news > h4 {
-    border-bottom: solid rgb(70, 70, 70) 1px;
-    padding-bottom: 5px;
-
+tr, th, td {
+    border: solid rgb(70, 70, 70) 1px;
 }
+
 
 @media not screen  and (min-width: 720px) {
     .news {
@@ -94,9 +105,6 @@ body {
     }
 }
 
-.information__aboutwiki {
-    border-top: solid rgb(55, 55, 55) 1px;
-}
 
 .usefulquote {
     display: flex;
@@ -107,15 +115,13 @@ body {
 
 main {
     display: block;
+    background-color: rgb(35, 35, 35);
+    border-top: solid rgb(55, 55, 55) 1px;
 }
-
 
 #mainpage {
     display: flex;
     justify-content: end;
-    background-color: rgb(35, 35, 35);
-    border-top: solid rgb(55, 55, 55) 1px;
-    border-bottom: solid lightgray 1px;
 }
 
 .information {
@@ -126,9 +132,6 @@ main {
 
 .ascii_art {
     display: none;
-}
-
-.information__sections {
 }
 
 footer {
@@ -142,19 +145,17 @@ footer {
     margin-left: auto;
 }
 
-#authorization{
+form{
     width: auto;
     margin-right: auto;
 }
 
-fieldset > p{
-}
-#authorization  > form > fieldset > p > label {
+form > fieldset > p > label {
     display: inline-block;
     width: 12em;
 
 }
-#authorization  > form > fieldset > p > input {
+form > fieldset > p > input {
     vertical-align:  middle;
 }
 
@@ -171,6 +172,64 @@ a:hover {
     color: aqua;
 }
 
-.boxheader {
-    border-bottom: solid gray 1px;
+#userlist {
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+#preloader {
+
+}
+
+#userlist {
+    display: none;
+}
+@keyframes slidein {
+    from {
+        margin-right: 0;
+        width: 300%;
+    }
+
+    to {
+        margin-right: 100%;
+        width: 100%;
+    }
+}
+
+.lds-ring {
+    width: 80px;
+    height: 400px;
+    left: 0;
+    right: 0;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
